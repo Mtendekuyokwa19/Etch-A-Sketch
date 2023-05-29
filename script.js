@@ -1,7 +1,77 @@
 let parent=document.querySelector('#container')
 let grid=document.querySelector('.grid')
+let noGrid=document.querySelector('.noGrid')
+let black=document.querySelector('.black')
+let red=document.querySelector('.red')
+let green=document.querySelector('.green')
+let boxNum=document.querySelector('.boxSize')
+let size;
+let measurement;
+   do{
 
-let size=prompt("enter")
+           
+         measurement=function(){
+            size=prompt("enter box sizes between 17-99")
+            
+        }
+       measurement();
+       //boxNum.addEventListener('click',measurement) ;
+        console.log(size)
+
+
+
+
+
+   }while(!(size>16&&size<100))
+
+
+
+    
+let chosenColor=function (x){
+  
+    switch(x){
+        case 1:
+            color="black"
+            console.log ("black")
+            break;
+        case 2:
+            color="red"
+            console.log ("red")
+            break;
+        case 3:
+            color="green"
+            console.log ("green")
+            break;       
+        default:
+            color="blue"
+
+    }
+         
+
+
+
+
+
+}
+
+chosenColor(2)
+black.addEventListener('click',function(e){
+
+    chosenColor(1);
+
+})
+red.addEventListener('click',function(e){
+
+
+    chosenColor(2)
+})
+
+green.addEventListener('click',function(e){
+
+
+    chosenColor(3)
+})
+
 
 
 
@@ -22,8 +92,19 @@ secondInnercontainer.classList.add('divIn')
 firstInnerCointainer.appendChild(secondInnercontainer)
 let secondStyle=secondInnercontainer.style;
 
+grid.addEventListener('click',function(e){
+
 
 secondStyle.setProperty("border","solid black 0.1px")
+
+})
+noGrid.addEventListener('click',function(e){
+
+
+    secondStyle.setProperty("border","solid black 0px")
+    
+    })
+
 
  
 
@@ -31,7 +112,7 @@ secondStyle.setProperty("border","solid black 0.1px")
 secondInnercontainer.addEventListener('mouseover',function(e){
     
 
-        secondStyle.setProperty("background-color","blue")
+        secondStyle.setProperty("background-color",color)
     
        
     
@@ -41,7 +122,6 @@ secondInnercontainer.addEventListener('mouseover',function(e){
 
 
 
-let colorRed=document.querySelector('.color')
 
 
 
@@ -49,7 +129,7 @@ let colorRed=document.querySelector('.color')
 let erase=document.querySelector('.erase')
 erase.addEventListener('click',function(e){
 
-    secondStyle.setProperty("background-color","")
+    secondStyle.setProperty("background-color","white")
 
 
 
@@ -68,4 +148,4 @@ for(i=0;i<size;i++){
     console.log("yandhi");
     
             }   
-
+        
