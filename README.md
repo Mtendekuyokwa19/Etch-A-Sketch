@@ -1,2 +1,10 @@
 # Etch-A-Sketch
-an odin project exercise
+
+Tools used
+
+* HTML5
+* CSS3
+* Javascript
+* Figma
+
+*future updates may include addition of a message box*
