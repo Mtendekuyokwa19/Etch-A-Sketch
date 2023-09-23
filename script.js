@@ -130,6 +130,7 @@ let erase=document.querySelector('.erase')
 erase.addEventListener('click',function(e){
 
     secondStyle.setProperty("background-color","white")
+   secondStyle.setProperty("border-radius","3px")
 
 
 
