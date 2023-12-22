@@ -15,18 +15,9 @@ let measurement;
             
         }
        measurement();
-       //boxNum.addEventListener('click',measurement) ;
-        console.log(size)
+       
 
-
-
-
-
-   }while(!(size>16&&size<100))
-
-
-
-    
+   }while(!(size>16&&size<100))   
 let chosenColor=function (x){
   
     switch(x){
@@ -46,12 +37,6 @@ let chosenColor=function (x){
             color="blue"
 
     }
-         
-
-
-
-
-
 }
 
 chosenColor(2)
@@ -72,12 +57,7 @@ green.addEventListener('click',function(e){
     chosenColor(3)
 })
 
-
-
-
-
 function container(){
-
 
  let firstInnerCointainer=document.createElement('div')
  firstInnerCointainer.classList.add('div')
@@ -100,40 +80,19 @@ secondStyle.setProperty("border","solid black 0.1px")
 })
 noGrid.addEventListener('click',function(e){
 
-
     secondStyle.setProperty("border","solid black 0px")
     
     })
 
-
- 
-
-
 secondInnercontainer.addEventListener('mouseover',function(e){
     
-
         secondStyle.setProperty("background-color",color)
-    
-       
-    
-
-
 })
-
-
-
-
-
-
 
 let erase=document.querySelector('.erase')
 erase.addEventListener('click',function(e){
 
     secondStyle.setProperty("background-color","white")
-   secondStyle.setProperty("border-radius","12px")
-
-
-
 
 })
 
